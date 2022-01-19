@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=devie-width, initial-scale=1.0">
+	<meta name="description" content="desripcion de mi página">
+	<title>ESTRUCTURAS</title>
+</head>
+
+
+<body>
+	<div class="contenedor">
+		<h1>Estructuras de Control </h1>
+
+		<p>Son instrucciones que permiten modifar el flujo de las sentencias de un programa.
+			<br>
+			Si tu programa está pensando para realizar cualquier tipo de calculo, con valores de entrada del usuarioy dependiendo de la magnitud de ese cálculo se sume i se reste algún valor X para acotar elresultado, en ese caso es necesario que utilices sentencias condicionales que verifiquen la magnitud de la variable.
+			<br>
+			puedes dividir las estructuras de control en dos: <b>estructuras de control condicionales y estructuras de control repetitivas.</b>
+				<br>
+
+
+		</p>
+
+		<p>Para resolver estas situaciones existen las denominadas estructuras de control que poseen las siguientes
+		características:</p>
+
+		<ul>
+			<li>Una estructura de control tiene un único punto de entrada y un único punto de salida.</li>
+			<li>Una estructura de control se compone de sentencias o de otras estructuras de control.</li>
+		</ul>
+		<br>
+
+		<br>
+		<img src="img2.jpg">
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/mj1Q-XZEFTk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+		<br>
+		<br>
+		<h2>Estructuras de Control Condicionales </h2>
+
+		<p>
+			Por defecto, Las instrucciones de un programa se ejecutan secuencialmente:
+		</p>
+
+			<div class="form">
+				El orden secuencial de ejecución no altera el flujo de control
+				del programa respecto al orden de escritura de las instrucciones
+			</div>
+
+			<p>
+				Sin embargo, al describir la resolución de un problema, es normal
+				que tengamos que tener en cuenta condiciones que influyen sobre
+				la secuencia de pasos que hay que dar para resolver el problema:
+
+			</p>
+
+			<div class="form">
+				Según se cumplan o no determinadas condiciones,la secuencia de pasos involucrada en la realización de una tarea será diferente
+			</div>
+
+			<p>Las estructuras de control condicionales o selectivas nos permiten decidir qué ejecutar y qué no en un programa.
+			</p>
+			<p><b>ejemplo: Realizar una división sólo si el divisor es distinto de cero</b></p>
+
+		<p><b>estructura condicional "if"</b><br>
+		La sentencia if nos permite elegir si se ejecuta o no un bloque de instrucciones</p>
+
+		<img src="img3.jpg">
+<br>
+<p>
+	<b>Sintaxis</b><br>
+if (condición) <br>
+sentencia;<br>
+if (condición) {<br>
+bloque<br>
+}<br><br>
+donde bloque representa un bloque de instrucciones.
+
+</p>
+<div class="form">
+	Bloque de instrucciones:<br>
+	Secuencia de instrucciones encerradas entre dos llaves {....}
+	
+
+</div>
+
+
+
+
+		<p>
+			
+			Consideraciones acerca del uso de la sentencia if<br>
+				- Olvidar los paréntesis al poner la condición del if es un error sintáctico (los paréntesis son necesarios)<br>
+				- Confundir el operador de comparación == con el operador de asignación = puede producir errores inesperados<br>
+				- Los operadores de comparación ==, !=, <= y >= han de escribirse sin espacios.<br>
+				- El fragmento de código afectado por la condición del if debe sangrarse para que visualmente se interprete correctamente el ámbito de la sentencia if:<br><br><br>
+
+
+				if (condición) { <br>
+				// Aquí se incluye el código<br>
+				// que ha de ejecutarse sólo<br>
+				// si se cumple la condición del if<br>
+				// (sangrado para que se vea dónde<br>
+				// empieza y dónde acaba el if)<br>
+				} <br>
+
+		</p>
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/yUQsB6YeiXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+		<h2>Estructuras de control repetitivas/iterativas</h2>
+		<p>
+			A menudo es necesario ejecutar una instrucción o un bloque de instrucciones más de una vez.<br>
+			Ejemplo<br>
+			Implementar un programa que calcule la suma de N números leídos desde teclado.<br>
+			Podríamos escribir un programa en el que apareciese repetido el código que deseamos que se ejecute varias veces, pero…<br>
+		</p>
+
+
+		<div class="form">
+			Nuestro programa podría ser demasiado largo.
+		</div>
+
+
+		<div class="form">	
+			Gran parte del código del programa estaría duplicado, lo que dificultaría su mantenimiento en caso de que tuviésemos que hacer cualquier cambio, por trivial que fuese éste.
+		</div>
+
+
+		<div class="form">
+			Una vez escrito el programa para un número determinado de repeticiones (p.ej. sumar matrices 3x3), el mismo programa no podríamos reutilizarlo si necesitásemos realizar un número distinto de operaciones (p.ej. matrices 4x4).
+			
+		</div>
+
+			<p>
+				Las estructuras de control repetitivas o iterativas, también conocidas como “bucles”, nos permiten resolver de forma elegante este tipo de problemas. Algunas podemos usarlas cuando conocemos el número de veces que deben repetirse las operaciones. Otras nos permiten repetir un conjunto de operaciones mientras se cumpla una condición.
+			</p>
+		
+
+			<div class="form">
+				Iteración: Cada repetición de las instrucciones de un bucle.
+			</div>
+
+			<p>
+				<b>El bucle while</b><br><br>
+					while (condición)<br>
+					sentencia;<br>
+					while (condición) { <br>
+					bloque<br>
+					}<br>
+			</p>
+			<img src="img5.jpg" width="400" height="300"><br><br>
+
+			<div class="form">
+				MUY IMPORTANTE <br>
+				En el cuerpo del bucle debe existir algo que haga variar el valor asociado a la condición que gobierna la ejecución del bucle.</div>
+				<br><br><br>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/ypNc3Eok69o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+	 <style>
+
+	 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+	 	html{ background: #74ebd5;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	 	}
+
+	 	body {
+	 		width: 850px;
+	 		margin: auto;
+	 		
+	 		text-align: center;
+	 		margin-top: 30px;
+
+	 	}
+
+	 	 .form{
+	 	 	width: 95%;
+	 	 	height: 70px;
+	 	 	background-color: rgba(255, 255, 0, 0.1);
+	 		backdrop-filter: blur(20px);
+	 		border: solid 1px #fff;
+	 	 	margin: auto;
+	 	 	font-size: 20px;
+	 	 	color: #5D5D5D;
+	 	 	margin-bottom: 20px;
+
+
+	 	 }
+
+
+
+	 .contenedor{
+	 	background-color: rgba(255, 255, 255, 0.3);
+	 	backdrop-filter: blur(20px);
+	 	border: solid 1px #fff;
+	 	border-radius: 5px;
+	 }
+
+	  iframe{ margin: 0 auto; }
+
+
+ul{
+	text-align: left;
+	font-size: 20px;
+	color: #5D5D5D;
+}
+
+p{ font-size: 20px; 
+color: #5D5D5D;
+text-align: justify;
+padding: 10px;
+}
+
+
+h1{ font-family: verdana;
+	font-size: 35px; 
+	color: #0F9B78;}
+
+h2{
+	 color: #31A286;
+	 font-size: 30px;
+	}
+
+	 </style>
+
+
+	
+
+
+</body>
+
+
+</html>
